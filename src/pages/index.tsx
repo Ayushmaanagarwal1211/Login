@@ -5,9 +5,6 @@ import { useState } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 
-import Signin from '@/pages/signin';
-import Emaillogin from '@/components/Emaillogin';
-import Verify from '@/pages/verify';
 import React from 'react';
 
 const Home: React.FC = () => {
