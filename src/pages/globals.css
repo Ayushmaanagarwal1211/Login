@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+.popup{
+ 
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    height: 70px;
+  animation: popupa forwards 0.2s ease;
+    background-color: #f8d7da;
+    color: black;
+    border-radius: 5px;
+    display:grid;
+    grid-template-rows: 97% 3%;
+    animation: popup 0.5s forwards ;
+    z-index: 99;
+  
+}
+@keyframes popup {
+  from{
+width: 0px;
+  }to{
+    width: 250px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.bo{
+  box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+border-radius: 1%;
+border: solid white 1px;
+/* background-color: #111827; */
+
+background-image: linear-gradient(to top,black 90%,rgb(59, 57, 57));
+
+color: white;
+
+}
+.fo{
+ display: flex;
+ flex-direction: column;
+ gap:10px
+}
+.in{
+  background-color: black;
+
+  border: none;
+  border-radius: 0%;
+  border-bottom: solid white 1px;
+  width: 380px;
+  height: 40px;
+}
+.in:focus{
+  outline: none;
+}
+
